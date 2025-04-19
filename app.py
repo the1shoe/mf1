@@ -139,8 +139,8 @@ st.markdown(
     <style>
     .logo {
         position: fixed;
-        top: 10px;  # Move the logo to the top of the page
-        right: 10px;  # Keep it at the right side of the page
+        bottom: 10px;  # Move the logo to the top of the page
+        left: 10px;  # Keep it at the right side of the page
         z-index: 9999;
         width: 100px;  # Adjusted size of the logo
         background-color: #f8f8f8;  # Off-white background for better visibility
