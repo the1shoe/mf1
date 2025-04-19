@@ -133,13 +133,14 @@ import base64
 logo_path = "new_logo.png"  # Logo path
 
 # Add custom CSS for positioning the logo at the bottom-right corner with an off-white background
+# Add custom CSS for positioning the logo at the top-right corner
 st.markdown(
-    """ 
+    """
     <style>
     .logo {
         position: fixed;
-        top: 10px;
-        left: 10px;
+        top: 10px;  # Move the logo to the top of the page
+        right: 10px;  # Keep it at the right side of the page
         z-index: 9999;
         width: 100px;  # Adjusted size of the logo
         background-color: #f8f8f8;  # Off-white background for better visibility
@@ -150,6 +151,8 @@ st.markdown(
     """, 
     unsafe_allow_html=True
 )
+
+
 
 # Display the logo
 st.markdown(f'<img class="logo" src="data:image/webp;base64,{base64.b64encode(open(logo_path, "rb").read()).decode()}" />', unsafe_allow_html=True)
