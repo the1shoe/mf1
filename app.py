@@ -138,8 +138,8 @@ st.markdown(
     <style>
     .logo {
         position: fixed;
-        bottom: 10px;
-        right: 10px;
+        top: 10px;
+        left: 10px;
         z-index: 9999;
         width: 100px;  # Adjusted size of the logo
         background-color: #f8f8f8;  # Off-white background for better visibility
